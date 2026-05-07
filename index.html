@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Renovate - Construction Template</title>
-		<!--meta-->
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.2" />
-		<meta name="format-detection" content="telephone=no" />
-		<meta name="keywords" content="Construction, Renovation" />
-		<meta name="description" content="Responsive Construction Renovation Template" />
-		<!--slider revolution-->
-		<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
-		<!--style-->
-		<link href='//fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700,900' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="style/reset.css">
-		<link rel="stylesheet" type="text/css" href="style/superfish.css">
-		<link rel="stylesheet" type="text/css" href="style/prettyPhoto.css">
-		<link rel="stylesheet" type="text/css" href="style/jquery.qtip.css">
-		<link rel="stylesheet" type="text/css" href="style/style.css">
-		<link rel="stylesheet" type="text/css" href="style/animations.css">
-		<link rel="stylesheet" type="text/css" href="style/responsive.css">
-		<link rel="stylesheet" type="text/css" href="style/odometer-theme-default.css">
-		<!--fonts-->
-		<link rel="stylesheet" type="text/css" href="fonts/streamline-small/styles.css">
-		<link rel="stylesheet" type="text/css" href="fonts/streamline-large/styles.css">
-		<link rel="stylesheet" type="text/css" href="fonts/template/styles.css">
-		<link rel="stylesheet" type="text/css" href="fonts/social/styles.css">
-		<link rel="shortcut icon" href="images/favicon.ico">
-		    <!-- ============================================= -->
-    <!-- CUSTOM PURPLE STYLES                          -->
-    <!-- ============================================= -->
+<head>
+    <title>Renovate - Construction Template</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.2" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content="Construction, Renovation" />
+    <meta name="description" content="Responsive Construction Renovation Template" />
+
+    <!-- Slider Revolution -->
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+
+    <!-- Styles -->
+    <link href='//fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <link rel="stylesheet" type="text/css" href="style/superfish.css">
+    <link rel="stylesheet" type="text/css" href="style/prettyPhoto.css">
+    <link rel="stylesheet" type="text/css" href="style/jquery.qtip.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/animations.css">
+    <link rel="stylesheet" type="text/css" href="style/responsive.css">
+    <link rel="stylesheet" type="text/css" href="style/odometer-theme-default.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="fonts/streamline-small/styles.css">
+    <link rel="stylesheet" type="text/css" href="fonts/streamline-large/styles.css">
+    <link rel="stylesheet" type="text/css" href="fonts/template/styles.css">
+    <link rel="stylesheet" type="text/css" href="fonts/social/styles.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- CUSTOM PURPLE STYLES -->
     <style>
         /* Main Purple Theme */
         .row.yellow, 
@@ -38,90 +39,36 @@
             color: #ffffff !important;
         }
 
-        .logo h1 a, 
-        .logo h1 {
-            color: #ff00ff !important;
-            font-weight: 700;
-        }
+        .logo h1 a, .logo h1 { color: #ff00ff !important; font-weight: 700; }
 
-        .announcement {
-            background: #ff4dff !important;
-        }
-
-        .announcement h3, 
-        .announcement p.description {
-            color: #ffffff !important;
-        }
-
-        .sl-small-wallet:before {
-            color: #ffffff !important;
-        }
+        .announcement { background: #ff4dff !important; }
+        .announcement h3, .announcement p.description { color: #ffffff !important; }
 
         /* Buttons */
-        .more, 
-        .more.simple, 
-        a.more, 
-        .button {
+        .more, .more.simple, a.more, .button {
             background-color: #ff00ff !important;
             color: #ffffff !important;
             border: 2px solid #ff00ff !important;
         }
 
-        .more:hover, 
-        .more.simple:hover, 
-        a.more:hover {
+        .more:hover, .more.simple:hover, a.more:hover {
             background-color: #ffffff !important;
             color: #ff00ff !important;
         }
 
-        /* Icon Circles */
-        .features-list li .ornament,
-        .features-list.big li .ornament {
-            border-color: #ff00ff !important;
-            border-width: 3px !important;
-        }
-
+        /* Other purple styles... (you can keep all your other rules) */
         .sl-small-helmet:before,
         .sl-small-roller:before,
         .sl-small-driller:before,
         .sl-large-house-1:before,
         .sl-large-eco:before,
-        .sl-large-garage:before {
+        .sl-large-garage:before,
+        .social-twitter {
             color: #ff00ff !important;
-        }
-		.social-twitter {
-    background-color: #ff00ff !important;
-}
-                              /* X circle fix - more breathing room for text */
-        .x-contact-item {
-            position: relative !important;
-            padding-left: 130px !important;
-            min-height: 60px !important;
-        }
-        .x-contact-item:before {
-            content: "𝕏" !important;
-            position: absolute !important;
-            left: 12px !important;
-            top: 50% !important;
-            transform: translateY(-50%) !important;
-            width: 48px !important;
-            height: 48px !important;
-            background-color: #ffffff !important;
-            color: #ff00ff !important;
-            border-radius: 50% !important;
-            display: flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-            font-size: 50px !important;
-            font-weight: 500 !important;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.2) !important;
-            border: 3px solid #ff00ff !important;
-            z-index: 2 !important;
         }
     </style>
 </head>
-	</head>
-	<body>
+<body>
 		<div class="site-container">
 			<div class="header-top-bar-container clearfix">
 				<div class="header-top-bar">
@@ -393,65 +340,63 @@
 			<!-- Slider Revolution -->
 			<div class="revolution-slider-container">
 				<div class="revolution-slider" data-version="5.4.8" style="display: none;">
-					<ul style="display: none;">
-						<!-- SLIDE 1 -->
-						<li data-transition="fade" data-masterspeed="500" data-slotamount="1" data-delay="6000">
-							<!-- MAIN IMAGE -->
-							<img src="images/slider/image_01.jpg" alt="slidebg1" data-bgfit="cover">
-							<!-- LAYERS -->
-							<!-- LAYER 01 -->
-							<div class="tp-caption"
-								data-frames='[{"delay":500,"speed":1200,"from":"x:40;o:0;","ease":"easeInOutExpo"},{"delay":"wait","speed":500,"to":"o:0;","ease":"easeInOutExpo"}]'
-								data-x="0"
-								data-y="140"
-								>
-								<!--data-start="500"
-								data-transform_in="x:40;y:0;o:0;s:1200;e:easeInOutExpo;"
-								data-transform_out="x:0;y:0;o:0;s:500;e:easeInOutExpo;"-->
-								
-								<div class="slider-content-box"><h2><a href="service_household_repairs.html" title="HOUSEHOLD REPAIRS">YOUR MOST AFFORDABLE CONTRACTORS</a></h2>
-									<p>We have the experience, personel and resources to make the project run smoothly. We can ensure a job is done on time.</p>
-																</div>
-							</div>
-						</li>
+					                    <ul style="display: none;">
+                        <!-- SLIDE 1 -->
+                        <li data-transition="fade" data-masterspeed="500" data-slotamount="1" data-delay="6000">
+                            <!-- MAIN IMAGE -->
+                            <img src="images/slider/image_01.jpg" alt="slidebg1" data-bgfit="cover">
+                            <!-- LAYERS -->
+                            <!-- LAYER 01 -->
+                            <div class="tp-caption"
+                                data-frames='[{"delay":500,"speed":1200,"from":"x:40;o:0;","ease":"easeInOutExpo"},{"delay":"wait","speed":500,"to":"o:0;","ease":"easeInOutExpo"}]'
+                                data-x="0"
+                                data-y="140"
+                                >
+                                <div class="slider-content-box">
+                                    <h2><a href="service_household_repairs.html" title="HOUSEHOLD REPAIRS">YOUR MOST AFFORDABLE CONTRACTORS</a></h2>
+                                    <p>We have the experience, personel and resources to make the project run smoothly. We can ensure a job is done on time.</p>
+                                </div>
+                            </div>
+                        </li>
 
-						<!-- SLIDE 2 -->
-<li data-transition="fade" data-masterspeed="500" data-slotamount="1" data-delay="6000">
-    <!-- MAIN IMAGE -->
-    <img src="php/images/slider/image_02.jpg?v=20" 
-         alt="slidebg2" 
-         data-bgfit="cover">
-    
-    <!-- LAYERS (keep everything below the same) -->
-    <div class="tp-caption" ... >
-        ... (your existing text and layers) ...
-    </div>
-</li>
-						
-						<!-- SLIDE 3 -->
-						<li data-transition="fade" data-masterspeed="500" data-slotamount="1" data-delay="6000">
-							<!-- MAIN IMAGE -->
-							<img src="images/slider/image_03.jpg" alt="slidebg3" data-bgfit="cover">
-							<!-- LAYERS -->
-							<!-- LAYER 01 -->
-							<div class="tp-caption"
-								data-frames='[{"delay":500,"speed":1200,"from":"x:40;o:0;","ease":"easeInOutExpo"},{"delay":"wait","speed":500,"to":"o:0;","ease":"easeInOutExpo"}]'
-								data-x="0"
-								data-y="140"
-								>
-								<!--data-start="500"
-								data-transform_in="x:40;y:0;o:0;s:1200;e:easeInOutExpo;"
-								data-transform_out="x:0;y:0;o:0;s:500;e:easeInOutExpo;"-->
-								
-								<div class="slider-content-box">
-									<h2><a href="service_household_repairs.html" title="HOUSEHOLD REPAIRS">YOUR MOST AFFORDABLE CONTRACTORS</a></h2>
-									<p>We have the experience, personel and resources to make the project run smoothly. We can ensure a job is done on time.</p>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
+                        <!-- SLIDE 2 - MAGENTA IMAGE -->
+                        <li data-transition="fade" data-masterspeed="500" data-slotamount="1" data-delay="6000">
+                            <!-- MAIN IMAGE -->
+                            <img src="../php/images/slider/image_02.jpg?v=30" 
+                                 alt="slidebg2" 
+                                 data-bgfit="cover">
+                            <!-- LAYERS -->
+                            <!-- LAYER 01 -->
+                            <div class="tp-caption"
+                                data-frames='[{"delay":500,"speed":1200,"from":"x:40;o:0;","ease":"easeInOutExpo"},{"delay":"wait","speed":500,"to":"o:0;","ease":"easeInOutExpo"}]'
+                                data-x="0"
+                                data-y="140"
+                                >
+                                <div class="slider-content-box">
+                                    <h2><a href="service_tiling_painting.html" title="TILING AND PAINTING">PROFESSIONAL TILING AND PAINTING SERVICES</a></h2>
+                                    <p>We combine quality workmanship, superior knowledge and low prices to provide you with service unmatched by our competitors.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- SLIDE 3 -->
+                        <li data-transition="fade" data-masterspeed="500" data-slotamount="1" data-delay="6000">
+                            <!-- MAIN IMAGE -->
+                            <img src="images/slider/image_03.jpg" alt="slidebg3" data-bgfit="cover">
+                            <!-- LAYERS -->
+                            <!-- LAYER 01 -->
+                            <div class="tp-caption"
+                                data-frames='[{"delay":500,"speed":1200,"from":"x:40;o:0;","ease":"easeInOutExpo"},{"delay":"wait","speed":500,"to":"o:0;","ease":"easeInOutExpo"}]'
+                                data-x="0"
+                                data-y="140"
+                                >
+                                <div class="slider-content-box">
+                                    <h2><a href="service_household_repairs.html" title="HOUSEHOLD REPAIRS">YOUR MOST AFFORDABLE CONTRACTORS</a></h2>
+                                    <p>We have the experience, personel and resources to make the project run smoothly. We can ensure a job is done on time.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
 			<!--/-->
 
 			<div class="theme-page">
