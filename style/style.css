@@ -343,13 +343,13 @@ h1, h2, h3, h4, h5, h6
 	font-family: 'Raleway';
 	margin: 0;
 	padding: 0;
-	color: #000;
+	color: #ff00ff;
 	font-weight: 600;
 	letter-spacing: 1px
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
 {
-	color: #000;
+	color: #ff00ff;
 	transition: opacity 0.3s ease 0s;
 	opacity: 1;
 }
@@ -3519,26 +3519,26 @@ body.lock-position
 	height: 100%;
 
 /* ====================== X CONTACT ICON ====================== */
-.x-contact-item {
-    position: relative;
-    padding-left: 75px !important;
+.contact-details-list li {
+    min-height: 70px;
 }
-.x-contact-item:before {
-    content: "𝕏";
-    position: absolute;
-    left: 8px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 48px;
-    height: 48px;
-    background: #ffffff;
-    color: #ff00ff;
-    border: 3px solid #ff00ff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-    font-weight: 900;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+.sl-small-twitter {
+    width: 60px !important;
+    height: 60px !important;
+    background: white !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border: none !important;
+    font-size: 38px !important;
+    color: #ff00ff !important;
+    font-weight: 900 !important;
+    line-height: 1 !important;
+}
+
+/* Force X text spacing */
+.sl-small-twitter + div {
+    margin-top: -22px !important;
 }
