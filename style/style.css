@@ -3541,4 +3541,48 @@ body.lock-position
 /* Force X text spacing */
 .sl-small-twitter + div {
     margin-top: -22px !important;
+
+	/* ====================== aggressive logo spacing collapse ====================== */
+.logo, 
+.logo.vertical-align-cell, 
+.header .logo {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: -55px !important;    /* Aggressive top pull */
+    margin-bottom: -55px !important; /* Aggressive bottom pull */
+    height: auto !important;
+    line-height: 0 !important;       /* Kills standard line formatting space */
+}
+
+.logo img {
+    max-height: 300px !important;    
+    width: auto !important;
+    margin: 0 auto !important;
+    display: block !important;       /* Kills native bottom inline text alignment gaps */
+}
+
+/* Hard reset for all possible parent wrapper wrappers */
+.header-container, 
+.header, 
+.vertical-align-table,
+.vertical-align-cell {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    min-height: 0 !important;
+    height: auto !important;
+}
+
+/* Adjust the top bar directly above the logo to stop pushing downward */
+.header-top-bar-container {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* Adjust the main menu container to avoid pulling the header down */
+.header .nav-container, 
+.header .menu {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
