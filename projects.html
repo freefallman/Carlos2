@@ -26,92 +26,68 @@
     <link rel="stylesheet" type="text/css" href="fonts/social/styles.css">
     <link rel="shortcut icon" href="images/favicon.ico">
 
-    <!-- CUSTOM PURPLE STYLES -->
-    <style>
-        .row.yellow, 
-        .yellow.full-width, 
-        .social-icons.yellow {
-            background-color: #ff00ff !important;
-            color: #ffffff !important;
-        }
-        .logo h1 a, .logo h1 { 
-            color: #ff00ff !important; 
-            font-weight: 700; 
-            border-bottom: none !important;
-        }
+    <!-- CUSTOM PURPLE STYLES + LOGO FIX -->
+<style>
+    .row.yellow, 
+    .yellow.full-width, 
+    .social-icons.yellow {
+        background-color: #ff00ff !important;
+        color: #ffffff !important;
+    }
 
-        .more, .more.simple, a.more, .button {
-            background-color: #ff00ff !important;
-            color: #ffffff !important;
-            border: 2px solid #ff00ff !important;
-        }
-        .more:hover, .more.simple:hover, a.more:hover {
-            background-color: #ffffff !important;
-            color: #ff00ff !important;
-        }
+    .more, .more.simple, a.more, .button {
+        background-color: #ff00ff !important;
+        color: #ffffff !important;
+        border: 2px solid #ff00ff !important;
+    }
 
-        /* SAFE TARGETED FIX - Only removes line under "OUR PROJECTS" */
-        .page-header-left h1 {
-            border-bottom: none !important;
-            padding-bottom: 0 !important;
-            margin-bottom: 0 !important;
-        }
-    </style>
+    .more:hover, .more.simple:hover, a.more:hover {
+        background-color: #ffffff !important;
+        color: #ff00ff !important;
+    }
+
+    /* ====================== STRONG LOGO SPACING FIX ====================== */
+    .logo,
+    .logo.vertical-align-cell,
+    .header .logo {
+        padding: 8px 0 !important;
+        margin: 0 !important;
+        height: auto !important;
+    }
+
+    .logo img {
+        max-height: 175px !important;     /* This is the important line */
+        width: auto !important;
+        margin: 0 auto !important;
+    }
+
+    .header-container,
+    .header,
+    .vertical-align-table {
+        padding: 0 !important;
+        min-height: auto !important;
+    }
+
+    .header-top-bar-container {
+        margin-bottom: 0 !important;
+    }
+</style>
 </head>
 <body>
 
-<div class="site-container">
+<body>
+    <!-- ==================== NEW HEADER ==================== -->
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            })
+            .catch(error => console.error('Error loading header:', error));
+    </script>
+    <!-- ==================================================== -->
 
-    <!-- HEADER -->
-    <div class="header-top-bar-container clearfix">
-        <div class="header-top-bar">
-            <ul class="contact-details clearfix">
-                <li class="template-phone"><a href="tel:6082173346">608-217-3346</a></li>
-                <li class="template-mail"><a href="mailto:renovate@mail.com">renovate@mail.com</a></li>
-                <li class="template-clock">Mon - Fri: 08:00 - 17:00</li>
-            </ul>
-            <div class="search-container">
-                <a class="template-search" href="#" title="Search"></a>
-                <form class="search" action="search.html">
-                    <input type="text" name="s" placeholder="Search..." value="Search..." class="search-input hint">
-                    <fieldset class="search-submit-container">
-                        <span class="template-search"></span>
-                        <input type="submit" class="search-submit" value="">
-                    </fieldset>
-                </form>
-            </div>
-            <ul class="social-icons">
-                <li>
-                    <a target="_blank" href="https://twitter.com/CCcrossfitman" class="social-twitter" title="Follow us on X">@CCcrossfitman</a>
-                </li>
-            </ul>
-        </div>
-        <a href="#" class="header-toggle template-arrow-up"></a>
-    </div>
-
-    <!-- Main Header -->
-    <div class="header-container">
-        <div class="vertical-align-table column-1-1">
-            <div class="header clearfix">
-                <div class="logo vertical-align-cell">
-                    <h1><a href="index.html" title="Renovate">RENOVATE</a></h1>
-                </div>
-                <a href="#" class="mobile-menu-switch vertical-align-cell">
-                    <span class="line"></span><span class="line"></span><span class="line"></span>
-                </a>
-                <div class="menu-container clearfix vertical-align-cell">
-                    <nav>
-                        <ul class="sf-menu">
-                            <li><a href="index.html">HOME</a></li>
-                            <li><a href="services.html">SERVICES</a></li>
-                            <li><a href="projects.html">PROJECTS</a></li>
-                            <li><a href="contact.html">CONTACT</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Your page content starts here -->
 
     <!-- Page Content -->
     <div class="theme-page padding-bottom-70">

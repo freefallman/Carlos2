@@ -29,106 +29,66 @@
     <link rel="stylesheet" type="text/css" href="fonts/social/styles.css">
     <link rel="shortcut icon" href="images/favicon.ico">
 
-    <!-- CUSTOM PURPLE STYLES -->
+   <!DOCTYPE html>
+<html>
+<head>
+    <title>One Stud Remodeling LLC | Services</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.2" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Styles -->
+    <link href='//fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <link rel="stylesheet" type="text/css" href="style/superfish.css">
+    <link rel="stylesheet" type="text/css" href="style/prettyPhoto.css">
+    <link rel="stylesheet" type="text/css" href="style/jquery.qtip.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/animations.css">
+    <link rel="stylesheet" type="text/css" href="style/responsive.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="fonts/streamline-small/styles.css">
+    <link rel="stylesheet" type="text/css" href="fonts/streamline-large/styles.css">
+    <link rel="stylesheet" type="text/css" href="fonts/template/styles.css">
+    <link rel="stylesheet" type="text/css" href="fonts/social/styles.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- CUSTOM PURPLE STYLES + LOGO FIX -->
     <style>
-        .row.yellow, 
-        .yellow.full-width, 
-        .social-icons.yellow {
+        .row.yellow, .yellow.full-width, .social-icons.yellow {
             background-color: #ff00ff !important;
             color: #ffffff !important;
         }
-        .logo h1 a, .logo h1 { 
-            color: #ff00ff !important; 
-            font-weight: 700; 
-        }
-
         .more, .more.simple, a.more, .button {
             background-color: #ff00ff !important;
             color: #ffffff !important;
-            border: 2px solid #ff00ff !important;
         }
-        h6.box-header {
-            border-bottom: 3px solid #ff00ff !important;
-            padding-bottom: 12px !important;
-            margin-bottom: 20px !important;
+        .more:hover, .more.simple:hover, a.more:hover {
+            background-color: #ffffff !important;
+            color: #ff00ff !important;
         }
-        h6.box-header:after {
-            display: none !important;
+        .logo img {
+            max-height: 175px !important;
+            width: auto !important;
         }
     </style>
 </head>
 <body>
-    <div class="site-container">
 
-        <!-- ==================== HEADER (Standardized) ==================== -->
-        <div class="header-top-bar-container clearfix">
-            <div class="header-top-bar">
-                <ul class="contact-details clearfix">
-                    <li class="template-phone">
-                        <a href="tel:6082173346">608-217-3346</a>
-                    </li>
-                    <li class="template-mail">
-                        <a href="mailto:Carlos@onestudremodeling.com">Carlos@onestudremodeling.com</a>
-                    </li>
-                    <li class="template-clock">
-                        Mon - Fri: 08:00 - 17:00
-                    </li>
-                </ul>
-                <div class="search-container">
-                    <a class="template-search" href="#" title="Search"></a>
-                    <form class="search" action="search.html">
-                        <input type="text" name="s" placeholder="Search..." value="Search..." class="search-input hint">
-                        <fieldset class="search-submit-container">
-                            <span class="template-search"></span>
-                            <input type="submit" class="search-submit" value="">
-                        </fieldset>
-                    </form>
-                </div>
-                <ul class="social-icons">
-                    <li>
-                        <a target="_blank" href="https://twitter.com/CCcrossfitman" class="social-twitter" title="Follow us on X">@CCcrossfitman</a>
-                    </li>
-                </ul>
-            </div>
-            <a href="#" class="header-toggle template-arrow-up"></a>
-        </div>
+    <!-- NEW HEADER -->
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            })
+            .catch(error => console.error('Error loading header:', error));
+    </script>
 
-        <!-- Main Header -->
-        <div class="header-container">
-            <div class="vertical-align-table column-1-1">
-                <div class="header clearfix">
-                    <div class="logo vertical-align-cell">
-                        <h1><a href="index.html" title="ONE STUD RENOVATE">ONE STUD RENOVATE</a></h1>
-                    </div>
-                    <a href="#" class="mobile-menu-switch vertical-align-cell">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
-                    </a>
-                    <div class="menu-container clearfix vertical-align-cell">
-                        <nav>
-                            <ul class="sf-menu">
-                                <li><a href="index.html" title="Home">HOME</a></li>
-                                <li><a href="services.html" title="Services">SERVICES</a></li>
-                                <li><a href="projects.html" title="Projects">PROJECTS</a></li>
-                                <li><a href="contact.html" title="Contact">CONTACT</a></li>
-                            </ul>
-                        </nav>
-                        <div class="mobile-menu-container">
-                            <div class="mobile-menu-divider"></div>
-                            <nav>
-                                <ul class="mobile-menu collapsible-mobile-submenus">
-                                    <li><a href="index.html" title="Home">HOME</a></li>
-                                    <li><a href="services.html" title="Services">SERVICES</a></li>
-                                    <li><a href="projects.html" title="Projects">PROJECTS</a></li>
-                                    <li><a href="contact.html" title="Contact">CONTACT</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- YOUR PAGE CONTENT STARTS HERE -->
+    <div class="theme-page">
+        <!-- Put your "OUR SERVICES" content here -->
 
         <!-- Page Content -->
         <div class="theme-page padding-bottom-70">
