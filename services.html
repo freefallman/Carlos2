@@ -1,36 +1,5 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Renovate | Our Services</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.2" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="keywords" content="Construction, Renovation, Remodeling, Kitchen Remodel, Bathroom Remodel, Wisconsin" />
-    <meta name="description" content="Professional construction and renovation services in Edgerton, WI. Kitchen, bathroom, whole home remodeling and more." />
-
-    <!-- Slider Revolution -->
-    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
-
-    <!-- Styles -->
-    <link href='//fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700,900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="style/reset.css">
-    <link rel="stylesheet" type="text/css" href="style/superfish.css">
-    <link rel="stylesheet" type="text/css" href="style/prettyPhoto.css">
-    <link rel="stylesheet" type="text/css" href="style/jquery.qtip.css">
-    <link rel="stylesheet" type="text/css" href="style/style.css">
-    <link rel="stylesheet" type="text/css" href="style/animations.css">
-    <link rel="stylesheet" type="text/css" href="style/responsive.css">
-    <link rel="stylesheet" type="text/css" href="style/odometer-theme-default.css">
-
-    <!-- Fonts -->
-    <link rel="stylesheet" type="text/css" href="fonts/streamline-small/styles.css">
-    <link rel="stylesheet" type="text/css" href="fonts/streamline-large/styles.css">
-    <link rel="stylesheet" type="text/css" href="fonts/template/styles.css">
-    <link rel="stylesheet" type="text/css" href="fonts/social/styles.css">
-    <link rel="shortcut icon" href="images/favicon.ico">
-
-   <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>One Stud Remodeling LLC | Services</title>
     <meta charset="UTF-8" />
@@ -47,6 +16,10 @@
     <link rel="stylesheet" type="text/css" href="style/animations.css">
     <link rel="stylesheet" type="text/css" href="style/responsive.css">
 
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
     <!-- Fonts -->
     <link rel="stylesheet" type="text/css" href="fonts/streamline-small/styles.css">
     <link rel="stylesheet" type="text/css" href="fonts/streamline-large/styles.css">
@@ -54,7 +27,7 @@
     <link rel="stylesheet" type="text/css" href="fonts/social/styles.css">
     <link rel="shortcut icon" href="images/favicon.ico">
 
-    <!-- CUSTOM PURPLE STYLES + LOGO FIX -->
+    <!-- CUSTOM PURPLE STYLES -->
     <style>
         .row.yellow, .yellow.full-width, .social-icons.yellow {
             background-color: #ff00ff !important;
@@ -72,11 +45,79 @@
             max-height: 175px !important;
             width: auto !important;
         }
+        /* FORCE OWL CAROUSEL */
+.owl-carousel .owl-stage-outer,
+.owl-carousel .owl-stage {
+    opacity: 1 !important;
+}
+
+.services-carousel .item {
+    background: white;
+    margin: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15) !important;
+}
+
+.services-carousel .item img {
+    width: 100% !important;
+    height: 280px !important;
+    object-fit: cover !important;
+}
+
+.services-carousel .box-header {
+    color: #ff00ff !important;
+    margin: 15px 0 10px !important;
+}
+/* SIDE ARROWS - OUTSIDE THE IMAGES */
+.services-carousel {
+    position: relative !important;
+}
+
+.services-carousel .owl-nav {
+    position: absolute !important;
+    top: 50% !important;
+    left: -25px !important;
+    right: -25px !important;
+    transform: translateY(-50%) !important;
+    z-index: 30 !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    padding: 0 10px !important;
+    pointer-events: none;
+}
+
+.services-carousel .owl-nav button {
+    background: #ff00ff !important;
+    color: white !important;
+    width: 55px !important;
+    height: 55px !important;
+    border-radius: 50% !important;
+    font-size: 30px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3) !important;
+    pointer-events: auto !important;
+    opacity: 0.95 !important;
+}
+
+.services-carousel .owl-nav button:hover {
+    background: white !important;
+    color: #ff00ff !important;
+    border: 3px solid #ff00ff !important;
+    transform: scale(1.1);
+}
+
+/* Make sure the carousel container has position relative */
+.services-carousel {
+    position: relative !important;
+}
     </style>
 </head>
 <body>
 
-    <!-- NEW HEADER -->
+    <!-- HEADER LOADED VIA SCRIPT -->
     <script>
         fetch('header.html')
             .then(response => response.text())
@@ -86,39 +127,59 @@
             .catch(error => console.error('Error loading header:', error));
     </script>
 
-    <!-- YOUR PAGE CONTENT STARTS HERE -->
     <div class="theme-page">
-        <!-- Put your "OUR SERVICES" content here -->
-
-        <!-- Page Content -->
-        <div class="theme-page padding-bottom-70">
-            <div class="row gray full-width page-header vertical-align-table">
-                <div class="row full-width padding-top-bottom-50 vertical-align-cell">
-                    <div class="row">
-                        <div class="page-header-left">
-                            <h1>OUR SERVICES</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="clearfix">
+        <!-- Page Header -->
+        <div class="row gray full-width page-header vertical-align-table">
+            <div class="row full-width padding-top-bottom-50 vertical-align-cell">
                 <div class="row">
-                    <ul class="services-list clearfix padding-top-70">
-                        <li>
-                            <img src="images/samples/390x260/image_05.jpg" alt="Household Repairs">
-                            <h4 class="box-header">HOUSEHOLD REPAIRS</h4>
-                            <p>We offer affordable and reliable repairs and improvements to the home.</p>
-                        </li>
-                        <!-- Add more services here as needed -->
-                    </ul>
+                    <div class="page-header-left">
+                        <h1>OUR SERVICES</h1>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <!-- SERVICES CAROUSEL - FULL 5 ITEMS -->
+<div class="row padding-top-70 padding-bottom-70">
+    <div class="owl-carousel services-carousel owl-theme">
+
+        <div class="item" style="text-align:center;">
+            <img src="https://picsum.photos/id/1015/800/500" alt="Flooring and Tiling">
+            <h4 class="box-header">FLOORING / TILING</h4>
+            <p>Expert installation of hardwood, tile, laminate, vinyl, and custom flooring solutions.</p>
+        </div>
+
+        <div class="item" style="text-align:center;">
+            <img src="https://picsum.photos/id/201/800/500" alt="Painting">
+            <h4 class="box-header">PAINTING</h4>
+            <p>High-quality interior and exterior painting with premium finishes and attention to detail.</p>
+        </div>
+
+        <div class="item" style="text-align:center;">
+            <img src="https://picsum.photos/id/106/800/500" alt="Plumbing and Electrical">
+            <h4 class="box-header">PLUMBING / ELECTRICAL</h4>
+            <p>Licensed professionals for repairs, upgrades, and new installations.</p>
+        </div>
+
+        <div class="item" style="text-align:center;">
+            <img src="https://picsum.photos/id/133/800/500" alt="Interior Remodeling">
+            <h4 class="box-header">INTERIOR REMODELING</h4>
+            <p>Full kitchen, bathroom, and whole-home remodeling tailored to your vision and lifestyle.</p>
+        </div>
+
+        <div class="item" style="text-align:center;">
+            <img src="https://picsum.photos/id/1018/800/500" alt="Decks">
+            <h4 class="box-header">DECKS</h4>
+            <p>Custom-designed and built decks and outdoor living spaces to enhance your home.</p>
+        </div>
+
+    </div>
+</div>
+    </div>
+</div>
     </div>
 
-    <!-- ==================== FOOTER LOADED FROM EXTERNAL FILE (Same as Index & Projects) ==================== -->
+    <!-- FOOTER LOADED VIA SCRIPT -->
     <script>
         fetch('footer.html')
             .then(response => response.text())
@@ -128,13 +189,34 @@
             .catch(error => console.error('Error loading footer:', error));
     </script>
 
+    <!-- Scripts -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+    <!-- Other existing scripts (revolution, etc.) -->
+    <script src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- ... your other scripts ... -->
+
+   <script>
+$(document).ready(function(){
+    $(".services-carousel").owlCarousel({
+        loop: true,
+        margin: 25,
+        nav: true,
+        dots: true,
+        autoplay: false,
+        navText: ["←", "→"],   // You can change these to any text or HTML
+        responsive: {
+            0: { items: 1 },
+            600: { items: 2 },
+            1000: { items: 3 }
+        }
+    });
+});
+</script>
+
     <a href="#top" class="scroll-top animated-element template-arrow-up" title="Scroll to top"></a>
 
-    <!-- Scripts -->
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-    <script type="text/javascript" src="js/jquery.ba-bbq.min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui-1.12.1.custom.min.js"></script>
-    <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
-    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+</body>
+</html>
