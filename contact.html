@@ -25,30 +25,44 @@
     <link rel="stylesheet" type="text/css" href="fonts/social/styles.css">
     <link rel="shortcut icon" href="images/favicon.ico">
 
-    <!-- CUSTOM PURPLE STYLES + LOGO FIX -->
-    <style>
-        .row.yellow, 
-        .yellow.full-width, 
-        .social-icons.yellow {
-            background-color: #ff00ff !important;
-            color: #ffffff !important;
-        }
+   <!-- CUSTOM PURPLE STYLES + LOGO FIX + SPACE FIX -->
+<style>
+    .row.yellow, 
+    .yellow.full-width, 
+    .social-icons.yellow {
+        background-color: #ff00ff !important;
+        color: #ffffff !important;
+    }
 
-        .more, .more.simple, a.more, .button {
-            background-color: #ff00ff !important;
-            color: #ffffff !important;
-        }
+    .more, .more.simple, a.more, .button {
+        background-color: #ff00ff !important;
+        color: #ffffff !important;
+    }
 
-        .more:hover, .more.simple:hover, a.more:hover {
-            background-color: #ffffff !important;
-            color: #ff00ff !important;
-        }
+    .more:hover, .more.simple:hover, a.more:hover {
+        background-color: #ffffff !important;
+        color: #ff00ff !important;
+    }
 
-        .logo img {
-            max-height: 175px !important;
-            width: auto !important;
-        }
-    </style>
+    .logo img {
+        max-height: 175px !important;
+        width: auto !important;
+    }
+
+    /* === FIX THE LARGE SPACE === */
+    .contact-map {
+        height: 110px !important;   /* Change this number to control map size */
+        max-height: 110px !important;
+    }
+
+    .page-margin-top {
+        margin-top: 20px !important; /* Reduces the big gap under the map */
+    }
+
+    .theme-page {
+        padding-top: 0 !important;
+    }
+</style>
 </head>
 <body>
 
@@ -72,7 +86,7 @@
         
 
         <div class="row page-margin-top">
-            <form class="contact-form" id="contact-form" method="post" action="contact_form/contact_form.php">
+            <form class="contact-form" id="contact-form" method="post" action="https://formsubmit.co/Carlos@onestudremodeling.com">
                 <div class="row">
                     <fieldset class="column column-1-2">
                         <input class="text-input" name="name" type="text" placeholder="Your Name *">
