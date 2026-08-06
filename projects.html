@@ -46,7 +46,7 @@
         color: #ff00ff !important;
     }
 
-    /* ====================== STRONG LOGO SPACING FIX ====================== */
+    /* Logo fix */
     .logo,
     .logo.vertical-align-cell,
     .header .logo {
@@ -56,7 +56,7 @@
     }
 
     .logo img {
-        max-height: 175px !important;     /* This is the important line */
+        max-height: 175px !important;
         width: auto !important;
         margin: 0 auto !important;
     }
@@ -70,6 +70,23 @@
 
     .header-top-bar-container {
         margin-bottom: 0 !important;
+    }
+
+    /* ===== CENTER TITLE + CAROUSEL (SAFE VERSION) ===== */
+    .page-header-left {
+        text-align: center !important;
+        float: none !important;
+        width: 100% !important;
+    }
+
+    .page-header h1 {
+        text-align: center !important;
+    }
+
+    .projects-carousel {
+        margin: 40px auto 0 auto !important;
+        max-width: 900px;          /* Adjust this number if you want it wider/narrower */
+        position: relative !important;
     }
 </style>
 </head>
@@ -94,29 +111,21 @@
         <div class="row gray full-width page-header vertical-align-table">
             <div class="row full-width padding-top-bottom-50 vertical-align-cell">
                 <div class="row">
-                    <div class="page-header-left">
-                        <h1>OUR PROJECTS</h1>
-                    </div>
+                    <div class="page-header-left" style="text-align: center; float: none; width: 100%;">
+    <h1>OUR PROJECTS</h1>
+</div>
                 </div>
             </div>
         </div>
 
-        <!-- Projects Carousel -->
-        <div class="row">
-            <div class="projects-carousel clearfix" style="position: relative;">
-                <a href="#" class="slider-control left projects-prev template-arrow-left-1" style="left: -60px;"></a>
-                
-                <ul id="projects-carousel" class="caroufredsel">
-                    <li><img src="images/samples/480x320/image_01.jpg" alt="Luxury Kitchen Remodel"></li>
-                    <li><img src="images/samples/480x320/image_02.jpg" alt="Whole Home Renovation"></li>
-                    <li><img src="images/samples/480x320/image_03.jpg" alt="Primary Bathroom"></li>
-                    <li><img src="images/samples/480x320/image_04.jpg" alt="Outdoor Living Space"></li>
-                </ul>
-
-                <a href="#" class="slider-control right projects-next template-arrow-left-1" style="right: -60px;"></a>
-            </div>
-        </div>
-    </div>
+       <!-- Single Project Image -->
+<div class="row" style="text-align: center; margin-top: 40px;">
+    <a href="https://x.com/Onestudremodel" target="_blank" title="Follow us on X">
+        <img src="images/samples/480x320/image_04.jpg" 
+             alt="Recent Projects" 
+             style="max-width: 900px; width: 100%; height: auto; display: inline-block;">
+    </a>
+</div>
 </div>
 
 <a href="#top" class="scroll-top animated-element template-arrow-up" title="Scroll to top"></a>
